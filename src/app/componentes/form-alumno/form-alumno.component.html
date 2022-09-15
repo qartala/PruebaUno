@@ -1,0 +1,64 @@
+<section>
+    <h4><u>Registrar  Alumno</u></h4>
+    <div>
+      <section [ngSwitch]="seleccion">
+
+      <label for="">Tipo de clase: </label>
+      <select
+       name="Tipo"
+       [value]="Alumno.Tipo"
+       (input)="otroTipo($event)">
+      <option value="Online">Online </option>
+      <option value="Presencial">Presencial</option>
+      </select>
+
+      </section>
+    </div>
+    <br>
+    <div>
+      <label for="">Rut:</label>
+      <input
+      type="text"
+      name="Rut"
+      [value]="Alumno.Rut"
+      (input)="otroRut($event)"
+      >
+    </div>
+    <br>
+    <div>
+      <label for="">Nombres:</label>
+      <input
+      type="text"
+      name="Nombre"
+      [value]="Alumno.Nombre"
+      (input)="otroNombre($event)">
+    </div>
+    <br>
+    <div>
+      <label for="">Apellidos:</label>
+       <input
+       type="text"
+       name="Apellido"
+       [value]="Alumno.Apellido"
+       (input)="otroApellido($event)">
+
+    </div>
+    <br>
+    <div>
+      <label for="">Edad:</label>
+      <input
+      type="number"
+      name="Edad"
+      [value]="Alumno.Edad"
+      (input)="otroEdad($event)"
+      >
+    </div>
+    <br>
+
+    <div>
+
+      <button (click)="Registrar()">Registrar</button>
+
+    </div>
+
+  </section>

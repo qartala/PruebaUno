@@ -1,0 +1,15 @@
+<section>
+  <h4><u>Crear seccion</u></h4>
+    <div>
+      <label for="">Ingresar seccion: </label>
+      <input
+      type="text"
+      name="seccion"
+      [value]="seccion.nombreSeccion"
+      (input)="cambiarSeccion($event)">
+    </div>
+    <br>
+    <div><button (click)="crearClase()" > Crear </button></div>
+
+  </section>
+
